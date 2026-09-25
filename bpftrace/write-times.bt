@@ -1,0 +1,19 @@
+// Этот пример показывает разницу между двумя write
+// для каждого потока. Вообще, он нужен для демонстрации
+// такой штуки, как фильтр (6 строка /@[tid]/) 
+
+t:syscalls:sys_enter_write {
+  @[tid] = nsecs
+}
+
+// try to remove /@[tid]/ filter
+t:syscalls:sys_exit_write /@[tid]/ {
+  @write[comm] = sum((nsecs - @[tid]) / 1000);
+  delete(@[tid]);
+}
+
+END {
+  print(@write, 10);
+  clear(@write);
+  clear(@);
+}

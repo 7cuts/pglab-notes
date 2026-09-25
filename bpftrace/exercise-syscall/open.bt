@@ -1,0 +1,6 @@
+t:s*:sys_enter_openat 
+/comm == "open"/
+{
+	printf("open at %d: filename: '%s', flags: %d\n",args->dfd, str(uptr(args->filename)), args->flags);
+}
+
