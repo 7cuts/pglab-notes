@@ -1,3 +1,27 @@
+# 28.09.2026
+
+## как смотреть
+
+Для каждой подзадачи привожу ссылку на соответствующий инструмент из bcc/tools,
+если такой есть.
+
+| задача                            | инструмент                |
+|-----------------------------------|---------------------------|
+| создание пакета                   |                           |
+| bind сокета                       | bindsnoop.py              |
+| tcp listen                        | solisten.py, tcpaccept.py |
+| активные подключения              | tcpconnect.py             |
+| состояния перегрузки              | tcpcong.py                |
+| дропы пакета со стек трейсом ядра | tcpdrop.py                |
+| retransmitions                    | tcpretrans.py             |
+| передача пакета dsad              |                           |
+| приём пакета                      |                           |
+| **общая top-подобная стата**      | tcptop                    |
+
+Есть ещё netqtop. его, как мне кажется, нет смысла использовать, так как
+он показыват распределение пакетов по очердям на сетевой карте. к
+мониторингу процессов это не имеет никакого отношения.
+
 # 23.09.2026
 
 Внутри ядра есть функции для eBPF со стабильным api:
@@ -8,25 +32,24 @@
 - Get process/cgroup context
 - Manipulate network packets and forwarding logic
 
-
 **dtrace** - есть такая штука, работает на BPF. По сути bpftrace - это наследние Dtrace.
 
----------------------------------
+---
 
 ### netlink (7) - коммуникация между ядром и user-space через через сокет `AF_LINK`
+
 `sock_diag(7)` - Получить отчёт по сокетам. **заполненность буферов на чтение, запись**
 
-
 можно посмотреть:
-- число pending connections для слушающего сокета
-- размер данных в входящей очереди
-- для слушащего сокета: backlog size (ещё не обработанные? не понял сам) 
+
+- число pending connections для слушающего сокета размер данных в входящей очереди
+- для слушащего сокета: backlog size (ещё не обработанные? не понял сам)
 - размер данных, которые готовы к отправке
 - таймеры на TCP сокета:
-	1. retransmit timer
-	2. keep-alive timer
-	3. TIME_WAIT timer
-	4. zero window probe timer
+  1.  retransmit timer
+  2.  keep-alive timer
+  3.  TIME_WAIT timer
+  4.  zero window probe timer
 
 С помощью netlink смог собрать вот такую статистику по сокетам.
 Запускал под нагрузкой от `iperf3`
@@ -40,7 +63,7 @@ iperf3 -c 127.0.0.1
 Список всех открытых tcp сокетов. (Можно филтровать по `inode` и `/proc/pid/fd`)
 
 ```
-------------------------------- 
+-------------------------------
 (большая часть сокетов выглядит так)
 inode = 1178146
 idiag_state = 1: ESTABLISHED
@@ -69,37 +92,35 @@ SK_MEMINFO_DROPS	      0
 -------------------------------
 ```
 
-
------------------------------------------------------------------
+---
 
 ### bpf iteratos
+
 https://docs.kernel.org/6.2/bpf/bpf_iterators.html
 
 можно периодически итерировать по каждому файлу внутри процесса (итератор `bpf_iter__task_file` + параметр `target_pid`)
 файла -> сокет -> буферы (всё, что есть в struct socket)
-
-
 
 ## tetragon
 
 подпрпоект [[cillium]], но при этом работает отдельно
 
 > [!В cравнение с bpftrace]
->Отчасти покрывает функционал [[bpftrace]] по трассировнию, только не надо писать программки под каждый сискол. Также есть более продвинутые фишки типа matchAction, которые позволяют осуществлять некоторые действия при ивенте.
+> Отчасти покрывает функционал [[bpftrace]] по трассировнию, только не надо писать программки под каждый сискол. Также есть более продвинутые фишки типа matchAction, которые позволяют осуществлять некоторые действия при ивенте.
 >
->**Минус:** если хотим написать свою логику для мониторинга, то tetragon не подойдёт, так как он декларативный
-
-
-
+> **Минус:** если хотим написать свою логику для мониторинга, то tetragon не подойдёт, так как он декларативный
 
 штука, которой я могу указать список ивентов, которые хочу отлавливать (например, вход в `connect()`).
 Когда ивент происходит, он логируется, и могут быть применены действия:
+
 - послать процессу сигнал
 - подменить retval системного вызова
 - ...
 
 ### Отслеживание всех tcp_connect
-Вот под такой конфиг 
+
+Вот под такой конфиг
+
 ```yaml
 apiVersion: cilium.io/v1alpha1
 kind: TracingPolicy
@@ -107,19 +128,21 @@ metadata:
   name: "monitor-tcp-connections"
 spec:
   kprobes:
-  - call: "tcp_connect"
-    syscall: false
-    args:
-    - index: 0
-      type: "sock"
+    - call: "tcp_connect"
+      syscall: false
+      args:
+        - index: 0
+          type: "sock"
 ```
 
 с помощью этой команды
+
 ```sh
 ❯ sudo tetra getevents --processes 'firefox' | jq .
 ```
 
 обновив, вкладку в браузере, я получил такой вывод (я взял только 1 ивент)
+
 ```json
 {
   "process_kprobe": {
@@ -164,6 +187,7 @@ spec:
 ```
 
 ### Посылка сигнала, который делает tcp_connect
+
 ```yaml
 apiVersion: cilium.io/v1alpha1
 kind: TracingPolicy
@@ -171,24 +195,23 @@ metadata:
   name: "kill-tcp-connections-by-binary"
 spec:
   kprobes:
-  - call: "tcp_connect"
-    syscall: false
-    args:
-    - index: 0
-      type: "sock"
-    selectors:
-    - matchBinaries:
-      - operator: "In"
-        values:
-        - "/usr/bin/curl"  # можно и по pid 
-      matchActions:
-      - action: Sigkill
-
+    - call: "tcp_connect"
+      syscall: false
+      args:
+        - index: 0
+          type: "sock"
+      selectors:
+        - matchBinaries:
+            - operator: "In"
+              values:
+                - "/usr/bin/curl" # можно и по pid
+          matchActions:
+            - action: Sigkill
 ```
 
 результат:
+
 ```sh
 ❯ curl 1.1.1.1
 [1]    837511 killed     curl 1.1.1.1
 ```
-
