@@ -2,7 +2,7 @@
 --------------------------------------------
 ## про `ss`  (socket statistics)
 
-использует `netlink` для доступа к структурам ядра 
+использует `netlink` для доступа к структурам ядра. вот пруф: 
 ```
 ❯ sudo strace -e trace=network  ss -tnpme
 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_SOCK_DIAG) = 3
