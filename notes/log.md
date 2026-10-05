@@ -2,6 +2,13 @@
 --------------------------------------------
 ## про `ss`  (socket statistics)
 
+использует `netlink` для доступа к структурам ядра 
+```
+❯ sudo strace -e trace=network  ss -tnpme
+socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_SOCK_DIAG) = 3
+```
+(создаётся сокет типа `AF_NETLINK`)
+
 ### позволяет смотреть
 - таймеры
 	- retransmission
