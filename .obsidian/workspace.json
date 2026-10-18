@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5b9276f5b225af66",
+        "id": "11aa05a30137028c",
         "type": "tabs",
         "children": [
           {
-            "id": "0ba449b2fb077aa3",
+            "id": "87aca97a1b137373",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -189,10 +189,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "0ba449b2fb077aa3",
+  "active": "54447d51372554e8",
   "lastOpenFiles": [
-    "bpftrace/check-closed.md",
+    "bpftrace/open.md",
     "Семинар/План.md",
+    "bpftrace/check-closed.md",
     "Семинар/Рисунок.excalidraw.md",
     "log.md",
     "Idea.md",
