@@ -4,5 +4,6 @@
   "attachmentFolderPath": "_attachments",
   "useMarkdownLinks": true,
   "alwaysUpdateLinks": true,
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "absolute",
+  "showUnsupportedFiles": true
 }
