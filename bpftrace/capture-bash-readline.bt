@@ -1,6 +1,6 @@
 // Здесь отлавливаем каждый вызов функции readline
-// в bash. 
+// в bash (то есть всё, что вводит пользователь)
 uretprobe:libreadline:readline /comm == "bash"/
 {
-    printf("readline: [%d]: \"%s\"\n", uid, str(uptr(retval)));
+    printf("readline: [%d]: %s\n", uid, str(retval));
 }

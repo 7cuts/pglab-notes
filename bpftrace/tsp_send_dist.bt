@@ -1,0 +1,7 @@
+// Показывает гистограмму с размерами отправленных
+// данных с помощью tcp send
+
+kprobe:tcp_sendmsg_locked
+{
+	@bytes = hist(arg2);
+}

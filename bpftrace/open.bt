@@ -1,0 +1,8 @@
+// Эта программа показывает все файлы, 
+// которые открвает в системе любые программы
+
+t:syscalls:sys_enter_openat 
+{
+	printf("open '%s'\n", str(args->filename));
+}
+

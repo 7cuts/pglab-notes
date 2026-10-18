@@ -1,0 +1,23 @@
+// Эта программа показывает tid, fd, имя файла только
+// для тех файлов, где не был вызыван close() на момент
+// завершения этой программы (завершать её надо через Ctrl+C)
+
+tracepoint:syscalls:sys_enter_openat
+{
+	@filename[tid] = str(args->filename);
+}
+
+tracepoint:syscalls:sys_exit_openat
+{
+	$fd = args->ret;
+	if ($fd >= 0) {
+		@fd_path[tid, $fd] = @filename[tid];
+	}
+	delete(@filename[tid]);
+}
+
+tracepoint:syscalls:sys_enter_close
+{
+	delete(@fd_path[tid, args->fd]);
+}
+
