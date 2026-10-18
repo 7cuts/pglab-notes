@@ -189,8 +189,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "54447d51372554e8",
+  "active": "87aca97a1b137373",
   "lastOpenFiles": [
+    "bpftrace/cli.md",
     "bpftrace/open.md",
     "Семинар/План.md",
     "bpftrace/check-closed.md",
