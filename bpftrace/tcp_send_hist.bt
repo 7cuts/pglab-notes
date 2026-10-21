@@ -5,5 +5,5 @@
 // # bpftrace ./tcp_send_dist.bt -p <PID>
 kprobe:tcp_sendmsg_locked
 {
-	@bytes = hist(arg2);
+	@bytes = hist(arg3);
 }

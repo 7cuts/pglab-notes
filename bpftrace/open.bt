@@ -1,7 +1,10 @@
 // Эта программа показывает все файлы,
 // которые открывает в системе любые программы
+begin {
+	printf("Tracing open syscalls... Hit Ctrl-C to end.\n");
+}
 
-t:syscalls:sys_enter_openat
-{
-	printf("open '%s'\n", str(args->filename));
+tracepoint:syscalls:sys_enter_open,
+tracepoint:syscalls:sys_enter_openat {
+	printf("%-6d %-16s %s\n", pid, comm, str(args.filename));
 }
