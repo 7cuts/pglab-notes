@@ -11,12 +11,14 @@
             "id": "dd3630a0ef3e0718",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "packet-journey-drawing.excalidraw.md"
+                "file": "README.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "packet-journey-drawing.excalidraw"
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ]
@@ -190,13 +192,14 @@
   "active": "dd3630a0ef3e0718",
   "lastOpenFiles": [
     "log.md",
-    "bpftrace-cli.md",
+    "packet-journey-drawing.excalidraw.md",
+    "README.md",
+    "sockets.md",
+    "тестовый дизайн.excalidraw.md",
+    "Как в bpftrace понять, что хотим трейсить.md",
     "Idea.md",
     "pg-seminar/План.md",
     "pg-seminar/Рисунок.excalidraw.md",
-    "sockets.md",
-    "README.md",
-    "packet-journey-drawing.excalidraw.md",
     "_sources/bpftrace-cli.md",
     "_sources/Брендан Грег про dtrace.md",
     "_sources/Tracing a packet in the Linux kernel (Part 1).md",
@@ -226,7 +229,6 @@
     "programms/netlink-list-sockets.c",
     "netlink/netlink-list-sockets.c",
     "notes/TODO.md",
-    "notes/Inbox.md",
     "notes/Семинар",
     "programms",
     "тестовый дизайн.png",
