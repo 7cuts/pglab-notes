@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Семинар/План.md",
+                "file": "bpftrace/cli.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "План"
+              "title": "cli"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 467.4850273132324
+    "width": 202.09765625
   },
   "right": {
     "id": "5d42f4a150162002",
@@ -191,32 +191,31 @@
   },
   "active": "87aca97a1b137373",
   "lastOpenFiles": [
-    "bpftrace/cli.md~",
-    "bpftrace/cli.md",
-    "bpftrace/open.md",
-    "Семинар/План.md",
-    "bpftrace/check-closed.md",
-    "Семинар/Рисунок.excalidraw.md",
+    "Inbox.md",
     "log.md",
+    "README.md",
+    "TODO.md",
     "Idea.md",
+    "bpftrace/cli.md",
+    "Семинар/План.md",
+    "Семинар/план.org~",
+    "Семинар/план.org",
+    "bpftrace/tcp_send_hist.bt",
+    "Семинар/Рисунок.excalidraw.md",
+    "bpftrace/cli.md~",
+    "bpftrace/open.md",
+    "bpftrace/check-closed.md",
     "Семинар",
     "log.md~",
-    "README.md",
     "bpftrace/bpftrace.md",
     "bpftrace/check-closed/open.c",
     "bpftrace/check-closed/check_closed.bt",
     "bpftrace/write-times.bt",
     "bpftrace/tcp_send_dist.bt",
-    "bpftrace/open.bt",
-    "bpftrace/check-closed",
-    "bpftrace/capture-bash-readline.bt",
-    "bpftrace",
     "bpftrace.md",
     "_attachments/log-1.png",
     "семинар/План.md",
-    "TODO.md",
     "тестовый дизайн.png",
-    "Inbox.md",
     "семинар/Рисунок.excalidraw.md",
     "packet-journey/sockets.md",
     "packet-journey/packet-journey-drawing.excalidraw.md",
