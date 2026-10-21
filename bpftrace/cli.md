@@ -1,10 +1,13 @@
 # CLI
+
 ### Как искать, что хотим трейсить
+
 ```sh
-sudo bpftrace -l | cut -d: -f1 | sort -u 
+sudo bpftrace -l | cut -d: -f1 | sort -u
 ```
 
 **Вывод**:
+
 ```
 fentry
 hardware
@@ -14,14 +17,17 @@ rawtracepoint
 software
 tracepoint
 ```
+
 Странно, что тут нет uprobe? Навреное, это часть kprobe...
 
 Далее, чтобы получить вполне конкрентые функции
+
 ```sh
 > sudo bpftrace -l "tracepoint:tcp_*"
 ```
 
 Получаем такой вывод. Это уже можно использовать в bpftrace-программах
+
 ```
 tracepoint:tcp:tcp_ao_handshake_failure
 tracepoint:tcp:tcp_ao_key_not_found

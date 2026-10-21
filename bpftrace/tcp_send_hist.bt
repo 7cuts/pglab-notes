@@ -1,6 +1,8 @@
 // Показывает гистограмму с размерами отправленных
 // данных с помощью tcp send
 
+// для группировки по pid надо запускать так:
+// # bpftrace ./tcp_send_dist.bt -p <PID>
 kprobe:tcp_sendmsg_locked
 {
 	@bytes = hist(arg2);

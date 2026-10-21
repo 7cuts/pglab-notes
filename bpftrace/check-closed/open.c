@@ -10,17 +10,12 @@
 #include <unistd.h>
 #include <errno.h>
 
-int
-main(int argc, char *argv[])
+int main (int argc, char *argv[])
 {
-
     if (argc != 2) {
-   	 fprintf(stderr, "Usage: %s <file>\n", argv[0]);
-   	 exit(EXIT_FAILURE);
+   		printf(stderr, "Usage: %s <file>\n", argv[0]);
+   		exit(EXIT_FAILURE);
     }
-
-
-    
 
 	int err;
     FILE *f;
