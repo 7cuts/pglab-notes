@@ -1,4 +1,4 @@
-(иду по коду ядра, оглядываясь на [гайд](https://medium.com/@m-ibrahim.research/tracing-a-packet-in-the-linux-kernel-from-socket-to-wire-part-1-125edd4c021d))
+(иду по коду ядра, оглядываясь на [Tracing a packet in the Linux kernel (Part 1)](_sources/Tracing%20a%20packet%20in%20the%20Linux%20kernel%20(Part%201).md))
 
 ## Жизненный цикл сокета
 

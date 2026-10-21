@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "8e6bf7135455fe5c",
+        "id": "640b835125468b03",
         "type": "tabs",
         "children": [
           {
-            "id": "b80903b3f10eab97",
+            "id": "dd3630a0ef3e0718",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "bpftrace/cli.md",
-                "mode": "source",
-                "source": false
+                "file": "packet-journey-drawing.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "cli"
+              "icon": "excalidraw-icon",
+              "title": "packet-journey-drawing.excalidraw"
             }
           }
         ]
@@ -83,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.09765625
+    "width": 318.6216011047363
   },
   "right": {
     "id": "5d42f4a150162002",
@@ -189,16 +187,36 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "b80903b3f10eab97",
+  "active": "dd3630a0ef3e0718",
   "lastOpenFiles": [
-    "bpftrace/cli.md",
-    "linux-net-stack/sockets.md",
-    "linux-net-stack/packet-journey-drawing.excalidraw.md",
     "log.md",
-    "Inbox.md",
+    "bpftrace-cli.md",
     "Idea.md",
-    "pg-seminar/Рисунок.excalidraw.md",
     "pg-seminar/План.md",
+    "pg-seminar/Рисунок.excalidraw.md",
+    "sockets.md",
+    "README.md",
+    "packet-journey-drawing.excalidraw.md",
+    "_sources/bpftrace-cli.md",
+    "_sources/Брендан Грег про dtrace.md",
+    "_sources/Tracing a packet in the Linux kernel (Part 1).md",
+    "_sources/README.md",
+    "_sources/kernel-internals-net.md",
+    "_sources/kernel-internals-bpf.md",
+    "_sources/bpftrace-stdlib.md",
+    "_sources/bpftrace-oneliners.md",
+    "_sources/bpftrace-lang.md",
+    "Links.md",
+    "_notes",
+    "_sources",
+    "_attachments/Pasted Image 20261018180325_083.png",
+    "_attachments/Pasted Image 20261018104630_872.png",
+    "_attachments/Pasted Image 20261018104551_429.png",
+    "_attachments/План.png",
+    "Семинары/Рисунок.excalidraw.md",
+    "Семинары",
+    "pg-seminar.md",
+    "_sources",
     "TODO.md",
     "Семинар/План.md",
     "Семинар",
@@ -209,33 +227,13 @@
     "netlink/netlink-list-sockets.c",
     "notes/TODO.md",
     "notes/Inbox.md",
-    "notes/log.md",
-    "notes/Idea.md",
-    "notes/тестовый дизайн.excalidraw.md",
-    "programms/тестовый дизайн.excalidraw.md",
-    "programms/log.md",
-    "programms/Idea.md",
-    "programms/Inbox.md",
-    "programms/TODO.md",
-    "notes/Семинар/Рисунок.excalidraw.md",
-    "notes/Семинар/План.md",
     "notes/Семинар",
     "programms",
-    "notes",
     "тестовый дизайн.png",
-    "README.md",
-    "Семинар/Рисунок.excalidraw.md",
-    "bpftrace/tcp_send_hist.bt~",
-    "Семинар/план.org~",
-    "Семинар/план.org",
     "_attachments/log-1.png",
     "_attachments/img.svg",
     "_attachments/log.png",
-    "_attachments/План.png",
     "_attachments/Pasted Image 20261018104741_197.png",
-    "_attachments/Pasted Image 20261018104630_872.png",
-    "_attachments/Pasted image 20261012212446.png",
-    "_attachments/Pasted image 20261012215121.png",
-    "_attachments/Pasted Image 20261018104551_429.png"
+    "_attachments/Pasted image 20261012212446.png"
   ]
 }
