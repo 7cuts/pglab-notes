@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "640b835125468b03",
+        "id": "ee74210515ac0202",
         "type": "tabs",
         "children": [
           {
-            "id": "dd3630a0ef3e0718",
+            "id": "3cb0ff6c5db2fd1d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "_sources/Брендан Грег про dtrace.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Брендан Грег про dtrace"
             }
           }
         ]
@@ -189,26 +189,26 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "dd3630a0ef3e0718",
+  "active": "3cb0ff6c5db2fd1d",
   "lastOpenFiles": [
-    "log.md",
-    "packet-journey-drawing.excalidraw.md",
-    "README.md",
-    "sockets.md",
-    "тестовый дизайн.excalidraw.md",
-    "Как в bpftrace понять, что хотим трейсить.md",
-    "Idea.md",
-    "pg-seminar/План.md",
-    "pg-seminar/Рисунок.excalidraw.md",
-    "_sources/bpftrace-cli.md",
-    "_sources/Брендан Грег про dtrace.md",
     "_sources/Tracing a packet in the Linux kernel (Part 1).md",
     "_sources/README.md",
-    "_sources/kernel-internals-net.md",
     "_sources/kernel-internals-bpf.md",
+    "_sources/kernel-internals-net.md",
     "_sources/bpftrace-stdlib.md",
     "_sources/bpftrace-oneliners.md",
     "_sources/bpftrace-lang.md",
+    "_sources/bpftrace-cli.md",
+    "README.md",
+    "log.md",
+    "packet-journey-drawing.excalidraw.md",
+    "Idea.md",
+    "pg-seminar/План.md",
+    "pg-seminar/Рисунок.excalidraw.md",
+    "sockets.md",
+    "тестовый дизайн.excalidraw.md",
+    "Как в bpftrace понять, что хотим трейсить.md",
+    "_sources/Брендан Грег про dtrace.md",
     "Links.md",
     "_notes",
     "_sources",
