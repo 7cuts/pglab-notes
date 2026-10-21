@@ -1,0 +1,9 @@
+{
+  "promptDelete": false,
+  "vimMode": false,
+  "attachmentFolderPath": "_attachments",
+  "useMarkdownLinks": true,
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "absolute",
+  "showUnsupportedFiles": true
+}
