@@ -4,37 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "ee74210515ac0202",
+        "id": "9655a084f8844664",
         "type": "tabs",
         "children": [
           {
-            "id": "3cb0ff6c5db2fd1d",
+            "id": "3d3386ea28c1ed4d",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "pg-seminar/Рисунок.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Рисунок.excalidraw"
-            }
-          },
-          {
-            "id": "37601717653c4580",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "log.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "log"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -202,36 +185,36 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "37601717653c4580",
+  "active": "3d3386ea28c1ed4d",
   "lastOpenFiles": [
-    "packet-journey-drawing.excalidraw.md",
-    "log.md",
-    "cillium.md",
-    "bpftrace.md",
+    "tetragon.md",
+    "тестовый дизайн.excalidraw.md",
+    "sockets.md",
+    "README.md",
+    "_sources/Брендан Грег про dtrace.md",
     "pg-seminar/План.md",
     "pg-seminar/Рисунок.excalidraw.md",
-    "_attachments/img.svg",
-    "_sources/bpftrace-cli.md",
-    "_attachments/Pasted Image 20261023130447_191.png",
-    "_attachments/Pasted Image 20261023124906_741.png",
-    "_sources/linux-doc-tracepoint.md",
-    "_sources/lvn-Using-Trace-Macro.md",
-    "README.md",
-    "Idea.md",
-    "тестовый дизайн.excalidraw.md",
-    "tetragon.md",
-    "sockets.md",
     "bcc.md",
-    "pwru.md",
-    "te.md",
-    "_sources/kernel-internals-bpf.md",
-    "_sources/kernel-internals-net.md",
-    "_sources/README.md",
-    "_sources/Tracing a packet in the Linux kernel (Part 1).md",
-    "_sources/Брендан Грег про dtrace.md",
+    "bpftrace.md",
+    "cillium.md",
+    "Idea.md",
+    "_sources/bpftrace-lang.md",
+    "_sources/bpftrace-cli.md",
     "_sources/bpftrace-stdlib.md",
     "_sources/bpftrace-oneliners.md",
-    "_sources/bpftrace-lang.md",
+    "_sources/kernel-internals-bpf.md",
+    "_sources/Tracing a packet in the Linux kernel (Part 1).md",
+    "_sources/README.md",
+    "_sources/lvn-Using-Trace-Macro.md",
+    "_sources/linux-doc-tracepoint.md",
+    "_sources/kernel-internals-net.md",
+    "pwru.md",
+    "log.md",
+    "packet-journey-drawing.excalidraw.md",
+    "_attachments/img.svg",
+    "_attachments/Pasted Image 20261023130447_191.png",
+    "_attachments/Pasted Image 20261023124906_741.png",
+    "te.md",
     "_notes",
     "_sources",
     "_attachments/Pasted Image 20261018180325_083.png",
