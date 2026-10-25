@@ -1,0 +1,4 @@
+tracepoint:tcp:tcp_probe
+{
+	printf("%s -> %s: %d bytes", ntop(args.saddr), ntop(args.daddr), data_len);
+}

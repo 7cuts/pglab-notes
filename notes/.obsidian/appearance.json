@@ -1,4 +1,5 @@
 {
   "cssTheme": "Gruber Darker",
-  "accentColor": "#dfc57c"
+  "accentColor": "#dfc57c",
+  "theme": "system"
 }

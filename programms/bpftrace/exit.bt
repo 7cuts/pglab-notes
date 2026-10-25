@@ -1,0 +1,4 @@
+tracepoint:syscalls:sys_exit_execve
+{
+	@progs[pid] = comm
+}
