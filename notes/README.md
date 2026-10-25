@@ -6,7 +6,7 @@
 - [Рисунок в excalidraw](pg-seminar/Рисунок.excalidraw.md)
 ### Сетевой стек ядра
 - [Сокеты](sockets.md)
-- [packet-journey-drawing.excalidraw](packet-journey-drawing.excalidraw.md)
+- [packet-journey-drawing.excalidraw](Excalidraw/packet-journey-drawing.excalidraw.md)
 
 ### Утилиты для решения проблем
 - [bpftrace](bpftrace.md)
