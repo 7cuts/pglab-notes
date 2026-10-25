@@ -13,4 +13,4 @@
 - [cillium](cillium.md)
 - [bcc](bcc.md)
 - [tetragon](tetragon.md)
-- [pwru](pwru)
+- [pwru](pwru.md)
