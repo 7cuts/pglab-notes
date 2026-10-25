@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pg-seminar/План.md",
+                "file": "log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "План"
+              "title": "log"
             }
           }
         ]
@@ -191,6 +191,7 @@
   },
   "active": "3d3386ea28c1ed4d",
   "lastOpenFiles": [
+    "pg-seminar/План.md",
     "README.md",
     "pwru.md",
     "packet-journey-drawing.excalidraw.md",
@@ -198,7 +199,6 @@
     "тестовый дизайн.excalidraw.md",
     "sockets.md",
     "_sources/Брендан Грег про dtrace.md",
-    "pg-seminar/План.md",
     "pg-seminar/Рисунок.excalidraw.md",
     "bcc.md",
     "bpftrace.md",
