@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "log.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "log"
+              "title": "README"
             }
           }
         ]
@@ -191,12 +191,13 @@
   },
   "active": "f726090414b27bea",
   "lastOpenFiles": [
-    "_attachments/pwru-ebpf-illustration.png",
-    "Excalidraw/pwru.excalidraw.md",
     "pwru.md",
     "README.md",
-    "packet-journey.md",
     "log.md",
+    "TODO.md",
+    "_attachments/pwru-ebpf-illustration.png",
+    "Excalidraw/pwru.excalidraw.md",
+    "packet-journey.md",
     "Idea.md",
     "eBPF-fentry-fexit-probe.md",
     "eBPF-Probes.md",
@@ -234,7 +235,6 @@
     "Семинар",
     "notes/linux-net-stack",
     "programms/netlink-list-sockets.c",
-    "netlink/netlink-list-sockets.c",
-    "тестовый дизайн.png"
+    "netlink/netlink-list-sockets.c"
   ]
 }

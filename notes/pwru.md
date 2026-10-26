@@ -1,5 +1,6 @@
 packet, where are you?
 
+репа: https://github.com/cilium/pwru.git
 рисунок: [pwru.excalidraw](Excalidraw/pwru.excalidraw.md)
 
 ---
