@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Идеи для статьи.md",
+                "file": "log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Идеи для статьи"
+              "title": "log"
             }
           }
         ]
@@ -191,34 +191,35 @@
   },
   "active": "f726090414b27bea",
   "lastOpenFiles": [
-    "log.md",
-    "Идеи для статьи.md",
-    "packet-journey.md",
-    "packet-journey-drawing.excalidraw.md",
-    "pwru.md",
+    "_attachments/pwru-ebpf-illustration.png",
     "Excalidraw/pwru.excalidraw.md",
+    "pwru.md",
+    "README.md",
+    "packet-journey.md",
+    "log.md",
+    "Idea.md",
+    "eBPF-fentry-fexit-probe.md",
+    "eBPF-Probes.md",
+    "_sources/Engineer_everything_with_eBPF.md",
+    "_attachments/Engineering_Everything_with_eBPF.pdf",
+    "pg-seminar/eBPF-trampoline.md",
+    "bpftrace.md",
+    "_attachments/Pasted Image 20261026132012_032.png",
     "Excalidraw/packet-journey-drawing.excalidraw.md",
+    "tetragon.md",
+    "Идеи для статьи.md",
+    "тестовый дизайн.excalidraw.md",
+    "bcc.md",
+    "cillium.md",
+    "sockets.md",
+    "packet-journey-drawing.excalidraw.md",
     "_sources/kernel-internals-net.md",
     "_sources/kernel-internals-net-fundamentals.md",
-    "Idea.md",
     "_sources/Article_The-Path-of-a-Packet-Through-the-Linux-Kernel.md",
     "_attachments/Pasted Image 20261025201109_487.png",
     "Excalidraw",
-    "tetragon.md",
-    "sockets.md",
-    "README.md",
     "pg-seminar/packet-jounrey.md",
     "_sources/lvn-Using-Trace-Macro.md",
-    "_sources/README.md",
-    "bcc.md",
-    "bpftrace.md",
-    "cillium.md",
-    "pg-seminar/План.md",
-    "тестовый дизайн.excalidraw.md",
-    "_sources/Брендан Грег про dtrace.md",
-    "pg-seminar/Рисунок.excalidraw.md",
-    "_sources/bpftrace-lang.md",
-    "_sources/bpftrace-cli.md",
     "_attachments/img.svg",
     "_attachments/Pasted Image 20261023130447_191.png",
     "_attachments/Pasted Image 20261023124906_741.png",
@@ -234,8 +235,6 @@
     "notes/linux-net-stack",
     "programms/netlink-list-sockets.c",
     "netlink/netlink-list-sockets.c",
-    "notes/Семинар",
-    "тестовый дизайн.png",
-    "_attachments/log-1.png"
+    "тестовый дизайн.png"
   ]
 }

@@ -1,9 +1,14 @@
 
 
-Накидал [Идеи для статьи](Идеи%20для%20статьи.md)
+Нашёл какую-то книгу по eBPF: [Engineer_everything_with_eBPF](_sources/Engineer_everything_with_eBPF.md) от какого-то бро из Египта. Судя по содеражнию, это прям то, что надо, чтобы понять eBPF. 
 
---- 
+Накидал [Идеи для статьи](Идеи%20для%20статьи.md).
 # Возвращаюсь к пути пакета
+
+Начал разбирать исходник [pwru](pwru.md). Пока что есть такая иилюстрация ([рисунок](Excalidraw/pwru.excalidraw.md)). Нашёл очень классную [картинку](https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Netfilter-packet-flow.svg/3840px-Netfilter-packet-flow.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail) на википедии (вверху справа на скриншоте).
+![](_attachments/pwru-ebpf-illustration.png)
+
+---
 Добавил заметки в [packet-journey](packet-journey.md)
 Есть ощущение, что всё, что мне нужно было сделать, уже решено
 1. Отслеживать сетевые ивенты процесса -- [pwru](pwru.md)
