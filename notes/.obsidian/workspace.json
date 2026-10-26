@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "packet-journey.md",
+                "file": "Идеи для статьи.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "packet-journey"
+              "title": "Идеи для статьи"
             }
           }
         ]
@@ -189,16 +189,17 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "54447d51372554e8",
+  "active": "f726090414b27bea",
   "lastOpenFiles": [
+    "log.md",
+    "Идеи для статьи.md",
+    "packet-journey.md",
     "packet-journey-drawing.excalidraw.md",
     "pwru.md",
-    "log.md",
     "Excalidraw/pwru.excalidraw.md",
     "Excalidraw/packet-journey-drawing.excalidraw.md",
     "_sources/kernel-internals-net.md",
     "_sources/kernel-internals-net-fundamentals.md",
-    "packet-journey.md",
     "Idea.md",
     "_sources/Article_The-Path-of-a-Packet-Through-the-Linux-Kernel.md",
     "_attachments/Pasted Image 20261025201109_487.png",
@@ -218,7 +219,6 @@
     "pg-seminar/Рисунок.excalidraw.md",
     "_sources/bpftrace-lang.md",
     "_sources/bpftrace-cli.md",
-    "_sources/bpftrace-stdlib.md",
     "_attachments/img.svg",
     "_attachments/Pasted Image 20261023130447_191.png",
     "_attachments/Pasted Image 20261023124906_741.png",
