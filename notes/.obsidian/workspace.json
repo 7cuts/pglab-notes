@@ -189,8 +189,9 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "f726090414b27bea",
+  "active": "54447d51372554e8",
   "lastOpenFiles": [
+    "packet-journey-drawing.excalidraw.md",
     "pwru.md",
     "log.md",
     "Excalidraw/pwru.excalidraw.md",
@@ -218,7 +219,6 @@
     "_sources/bpftrace-lang.md",
     "_sources/bpftrace-cli.md",
     "_sources/bpftrace-stdlib.md",
-    "_sources/bpftrace-oneliners.md",
     "_attachments/img.svg",
     "_attachments/Pasted Image 20261023130447_191.png",
     "_attachments/Pasted Image 20261023124906_741.png",

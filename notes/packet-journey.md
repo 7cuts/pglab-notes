@@ -69,9 +69,7 @@
 
 ### L4 layer
 1. `tcp_ipv4_recv()`. Сейчас указатель на хедер в `sk_buff` 
-2. `pskb_may_pull()` валидирует TCP хедер. (чексумму). Удаляет TCP-хедince TCP is very complex, covering further aspects  
-is beyond this paper’s scope. However, [7], [10], [11]  
-describe it in more detail.ер из `sk_buff`
+2. `pskb_may_pull()` валидирует TCP хедер. (чексумму). 
 3. ищем сокет-получатель через `__inet_lookup_skb()`. Эта функция записывает пакте в receive queue на сокете и посылает сигнал о новых данных (`SIGIO`, `SIGURG`) - для поллинга.
 
 #### Машина состояний TCP
