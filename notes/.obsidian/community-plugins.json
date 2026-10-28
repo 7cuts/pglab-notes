@@ -1,4 +1,6 @@
 [
   "obsidian-excalidraw-plugin",
-  "obsidian-paste-image-rename"
+  "obsidian-paste-image-rename",
+  "advanced-rename-and-delete-handler",
+  "consistent-attachments-and-links"
 ]

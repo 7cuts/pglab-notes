@@ -1,0 +1,27 @@
+{
+  "consistencyReportFile": "consistency-report.md",
+  "excludePaths": [],
+  "externalAttachmentLinkMode": "Report",
+  "includePaths": [],
+  "isCustomAttachmentLocationSuggestionDeclined": false,
+  "maxVaultRootPathLength": 0,
+  "proposedCollectSettings": null,
+  "proposedRenameDeleteSettings": null,
+  "sharedAttachmentPaths": [],
+  "shouldCreateNoteToPreserveOriginalName": false,
+  "shouldEnsurePathCompatibilityOnAndroid": false,
+  "shouldEnsurePathCompatibilityOnEveryPlatform": false,
+  "shouldEnsurePathCompatibilityOnIos": false,
+  "shouldEnsurePathCompatibilityOnLinux": true,
+  "shouldEnsurePathCompatibilityOnMacOs": false,
+  "shouldEnsurePathCompatibilityOnWindows": false,
+  "shouldNormalizeUnicodeNames": true,
+  "shouldShowBackupWarning": false,
+  "sidecarNoteNamePattern": "{{fileName}}.md",
+  "treatAsAttachmentExtensions": [
+    "",
+    "",
+    "",
+    ""
+  ]
+}
